@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task js</title>
+</head>
+
+<body>
+
+    <!-- question a -->
+
+    <script>
+        // Random number matrix 
+        var array = [];
+        var size = 10;
+        var sum = 0;
+        var total = 0;
+
+        for (var index = 0; index < size; index++) {
+            array[index] = Math.floor(Math.random() * 20);
+            // Sum Even Numbers in a Matrix
+            if (array[index] % 2 == 0) {
+                sum += array[index];
+            }
+            // sum numbers index is less than 0
+            if (index < 5) {
+                total += array[index];
+            }
+        }
+        //  Printing in console 
+        console.log(array);
+        console.log(sum);
+        console.log(total);
+        // Printing in html page
+        document.write('Array: [' + array + ']' + '<br>');
+        document.write('Sum of even numbers: ' + sum + '<br>');
+        document.write(' Total numbers index is less than 0: ' + total + '<br> <br> <br>');
+
+        <!-- question b -->
+        var UserData = {
+            name: 'ranim',
+            number: '123456',
+            age: 23,
+            email: 'ranim@gmail.com',
+        }
+        //  Printing in console 
+        console.log(UserData);
+        console.log(UserData.name);
+        console.log(UserData.number);
+        console.log(UserData.age);
+        console.log(UserData.email);
+
+        // Printing in html page
+        document.write('Name: ' + UserData.name + '<br>')
+        document.write('Number: ' + UserData.number + '<br>')
+        document.write('Age: ' + UserData.age + '<br>')
+        document.write('Email: ' + UserData.email + '<br>')
+
+    </script>
+
+</body>
+
+</html>
